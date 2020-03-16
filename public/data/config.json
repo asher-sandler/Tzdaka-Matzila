@@ -1,0 +1,9 @@
+{
+    "port": 5000,
+    "user": "Admin",
+    "password": "65980",
+	"mongodburl": "mongodb+srv://asher:!QAZ1qaz@cluster0-m40nn.mongodb.net/app?retryWrites=true&w=majority",
+	"dateUntil" : "2020-03-19 15:00",
+	"summWanted" : 120000,
+	"summHarvested" : 110000
+}

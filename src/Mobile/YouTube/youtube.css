@@ -1,0 +1,247 @@
+.youtube-desktop-rtl {
+    background-color: white;
+    /* width: 900px; */
+	border-bottom: 1px solid #d2d3d5;	
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+    /*border-top-left-radius: 12px;*/
+    /*border-top-right-radius: 12px;*/
+}
+
+.youtube-desktop-rtl .youtube-mobile{
+	width: 840px;
+    height: 480px;
+}
+
+
+.art-board-stop-desktop .container {
+    padding: 30px;
+}
+
+.art-board-stop-desktop .title {
+    height: auto;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    padding-bottom: 5px;
+}
+
+.art-board-stop-desktop .date {
+    width: 205px;
+    height: 24px;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #6d7278;
+}
+
+
+.art-board-stop-desktop .info-title {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #b2b2b2;
+    padding-bottom: 4px;
+}
+
+
+.art-board-stop-desktop .info-text {
+    font-size: 18px;
+    line-height: 1.14;
+    color: #0b7ffd;
+    padding-bottom: 20px;
+}
+
+.art-board-stop-desktop .info-regular {
+    font-size: 18px;
+    line-height: 1.14;
+    
+    padding-bottom: 20px;
+	    margin-left: -3px;
+}
+
+.art-board-stop-desktop .info-text > a{
+    font-size: 18px;
+    line-height: 1.14;
+    color: #0b7ffd;
+    padding-bottom: 20px;
+}
+
+
+.art-board-stop-desktop .working-hours {
+    font-size: 18px;
+    line-height: 1.78;
+    color: #333d48;
+    margin-left: -3px;
+}
+
+.art-board-stop-desktop .description {
+    /*width: 640px;*/
+    /* min-height: 144px; */
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #2c2c2c;
+    white-space: pre-line;
+}
+
+.art-board-stop-desktop .hashtag {
+    width: 147px;
+    height: 26px;
+    object-fit: contain;
+    border-radius: 6px;
+    background-color: #0b7ffd;
+    font-size: 16px;
+    color: #ffffff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.youtube-mobile {
+    background-color: white;
+    /* width: 900px; */
+	/* border-bottom: 1px solid #d2d3d5;	 */
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+    /*border-top-left-radius: 12px;*/
+    /*border-top-right-radius: 12px;*/
+}
+
+
+.art-board-stop-desktop .location-link a {
+    color: blue;
+  }
+
+  .art-board-stop-desktop .business-closed{
+      color: red;
+  }
+  
+@media screen and (max-width: 770px){
+.youtube-mobile{
+	width: 760px;
+    height: 434px;
+	}
+}
+
+
+@media screen and (max-width: 750px){
+    .youtube-mobile {
+        width: 730px;
+        height: 417px;
+        
+    }
+}
+
+@media screen and (max-width: 700px){
+    .youtube-mobile {
+        width: 700px;
+        height: 400px;
+        
+    }
+}
+
+@media screen and (max-width: 650px){
+    .youtube-mobile {
+        width: 650px;
+        height: 371px;
+        
+    }
+}
+
+@media screen and (max-width: 600px){
+    .youtube-mobile {
+        width: 600px;
+        height: 342px;
+        
+    }
+}
+
+@media screen and (max-width: 550px){
+    .youtube-mobile {
+        width: 550px;
+        height: 314px;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 500px){
+    .youtube-mobile {
+        width: 500px;
+        height: 285px;
+        
+    }
+}
+
+@media screen and (max-width: 450px){
+    .youtube-mobile {
+        width: 450px;
+        height: 257px;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 415px){
+    .youtube-mobile {
+        width: 410px;
+        height: 234px;
+        
+    }
+}
+
+
+@media screen and (max-width: 412px){
+    .youtube-mobile {
+        width: 410px;
+        height: 234px;
+        
+    }
+}
+
+
+@media screen and (max-width: 376px){
+    .youtube-mobile {
+        width: 375px;
+        height: 214px;
+        
+    }
+}
+
+@media screen and (max-width: 361px){
+    .youtube-mobile {
+		width: 360px;
+        height: 205px;
+       
+    }
+}
+
+@media screen and (max-width: 321px){
+    .youtube-mobile {
+		width: 310px;
+        height: 177px;
+		
+        
+    }
+}
+

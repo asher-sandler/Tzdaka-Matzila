@@ -1,0 +1,103 @@
+.aim-rtl {
+    height: 88px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: #f9f9f9;
+    /*background-color: whitesmoke;*/
+    /*background: rgba(255,255,255,0.8);*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    z-index: 100;
+    -webkit-transition: 0.75s;
+    -moz-transition: 0.75s;
+    -o-transition: 0.75s;
+    transition: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28)
+}
+
+/*.aim-rtl.hide {*/
+/*    opacity: 0;*/
+/*    visibility: hidden;*/
+/*}*/
+
+.aim-rtl .container {
+    position: relative;
+}
+
+.aim-rtl .summ-aim {
+    width: 287px;
+    height: 27px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #167efb;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(120%);
+    transform: translateY(120%);
+    right: 30px;
+}
+
+.aim-rtl .summ-harvested {
+    width: 287px;
+    height: 27px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    position: absolute;
+    margin: 0;
+	font-size: 50px;
+    top: 50%;
+    -ms-transform: translateY(45%);
+    transform: translateY(45%);
+    right: 270px;
+}
+
+.aim-rtl .google-play {
+
+    height: 48px;
+    object-fit: contain;
+    position: absolute;
+    top: 20px;
+    right: 600px;
+}
+
+.aim-rtl .app-store {
+    width: 162px;
+    height: 48px;
+    object-fit: contain;
+    position: absolute;
+    top: 20px;
+    left: 380px;
+}
+
+.aim-rtl .goal-status-ended {
+    background-color: #3bb34a;
+
+    width: 40px;
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+    color: #fff;
+	-ms-transform: translate(120%,120%);
+	transform: translate(120%,120%);
+}
+
+.aim-rtl .goal-status-ended .symbol {
+    font-size: 30px;
+}
+
+/* .fa, .fas { */
+    /* font-family: 'Font Awesome 5 Free'; */
+    /* font-weight: 900; */
+/* } */

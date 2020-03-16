@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+.countdown-rtl {
+	/* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	/* min-height: 30vh; */
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	
+   
+	background-color: white;
+    width: 900px;
+    margin: 0 auto;
+	border-bottom: 1px solid #d2d3d5;
+	
+}
+
+.countdown-rtl h1 {
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.countdown-rtl .countdown-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.countdown-rtl .countdown-item {
+	color: #111;
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    line-height: 30px;
+	margin: 10px;
+    padding-top: 10px;
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+
+.countdown-rtl .countdown-item span {
+	color: #333;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.countdown-rtl .countdown-svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+}

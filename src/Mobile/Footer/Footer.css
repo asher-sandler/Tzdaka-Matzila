@@ -1,0 +1,87 @@
+.footer-mobile{
+    /* width: 900px; */
+    height: 350px;
+    background-color: #167efb;
+    color: white;
+    padding-top: 20px;
+    margin: 0 auto;
+    /*border-bottom-left-radius: 12px;*/
+    /*border-bottom-right-radius: 12px;*/
+    background-size: 100%;
+}
+
+.footer-mobile .footer-table {
+    font-size: 14px;
+    line-height: 1.86;
+    color: #ffffff;
+    margin-left: 30px;
+    margin: 0 auto;
+}
+
+.footer-mobile .footer-logo {
+    width: 50px;
+    /* height: 32px; */
+    object-fit: contain;
+}
+
+
+.footer-mobile i{
+	color: white;
+	font-size: 1.5rem;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+
+.footer-mobile .little-phone{
+	color: white;
+	font-size: 1rem;
+	margin-right: 7px;
+
+}
+
+.footer-mobile .titles {
+    padding-bottom: 10px;
+	padding-right: 20px;
+
+}
+
+.footer-mobile .footer-link{
+	padding-right: 20px;
+}
+
+.footer-mobile .social-media {
+    position: relative;
+}
+
+.footer-mobile .social-media-table {
+    position: absolute;
+    bottom: -20px;
+    right: 2px;
+}
+
+.footer-mobile .social-media-icon {
+
+	padding-right: 20px;
+}
+
+.footer-mobile .legal {
+    padding-top: 20px;
+    padding-right: 20px;	
+}
+
+.footer-mobile .center-column {
+    padding-left: 145px;
+    padding-right: 220px;
+}
+
+
+.social-media-table-mobile {
+    width: 100vw;
+}
+.social-media-table-mobile tr {
+    height: calc(0.75 * 7.1428vw);
+}
+.social-media-table-mobile td {
+    width: 7.1428% /* or 7.1428vw */
+}

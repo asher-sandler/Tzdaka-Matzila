@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+.countdown-mobile-rtl {
+	/* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	/* min-height: 30vh; */
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	
+   
+	background-color: white;
+    /* width: 900px; */
+    margin: 0 auto;
+
+	
+}
+
+.countdown-mobile-rtl h1 {
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+}
+
+.countdown-mobile-rtl .countdown-mobile-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.countdown-mobile-rtl .countdown-mobile-item {
+	color: #111;
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    line-height: 30px;
+	margin: 10px;
+    padding-top: 10px;
+	position: relative;
+	width: 50px;
+	height: 50px;
+}
+
+.countdown-mobile-rtl .countdown-mobile-item span {
+	color: #333;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.countdown-mobile-rtl .countdown-mobile-svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+}

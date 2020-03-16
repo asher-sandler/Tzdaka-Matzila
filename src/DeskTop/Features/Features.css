@@ -1,0 +1,47 @@
+.features-desktop {
+    width: 900px;
+    height: 525px;
+    object-fit: contain;
+    padding-top: 32px;
+    margin: 0 auto;
+    background-image: url("features-background.jpg");
+    background-size: 100%;
+}
+
+.features-desktop .with-stops {
+    height: 21px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.17;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.features-desktop .features-list {
+    width: 418px;
+    height: 192px;
+    font-size: 16px;
+    line-height: 1.4;
+    /*padding-left: 150px;*/
+    color: #ffffff;
+    padding-right: 5px;
+    margin: 0 auto;
+}
+
+.features-desktop .list {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.features-desktop .feat {
+    padding-left: 25px;
+    text-indent: -25px;
+    margin-bottom: 10px;
+}
+
+.features-desktop .feat:before {
+    content: "•";
+    padding-right: 20px;
+}

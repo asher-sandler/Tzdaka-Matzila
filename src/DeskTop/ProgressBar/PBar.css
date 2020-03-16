@@ -1,0 +1,167 @@
+.progress-bar-desktop-rtl {
+    background-color: white;
+    width: 900px;
+    margin: 0 auto;
+	border-bottom: 1px solid #d2d3d5;
+ }
+
+.progress-bar-desktop .container {
+    padding: 30px;
+}
+
+.progress-bar-desktop .image {
+    
+	
+	position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.progress-bar-desktop .title {
+    height: auto;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    padding-bottom: 5px;
+}
+
+.progress-bar-desktop .date {
+    width: 205px;
+    height: 24px;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #6d7278;
+}
+
+
+.progress-bar-desktop .info-title {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #b2b2b2;
+    padding-bottom: 4px;
+}
+
+
+.progress-bar-desktop .info-text {
+    font-size: 18px;
+    line-height: 1.14;
+    color: #0b7ffd;
+    padding-bottom: 20px;
+}
+
+.progress-bar-desktop .info-regular {
+    font-size: 18px;
+    line-height: 1.14;
+    
+    padding-bottom: 20px;
+	    margin-left: -3px;
+}
+
+.progress-bar-desktop .info-text > a{
+    font-size: 18px;
+    line-height: 1.14;
+    color: #0b7ffd;
+    padding-bottom: 20px;
+}
+
+
+.progress-bar-desktop .working-hours {
+    font-size: 18px;
+    line-height: 1.78;
+    color: #333d48;
+    margin-left: -3px;
+}
+
+.progress-bar-desktop .description {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #2c2c2c;
+    white-space: pre-line;
+}
+
+.progress-bar-desktop .hashtag {
+    width: 147px;
+    height: 26px;
+    object-fit: contain;
+    border-radius: 6px;
+    background-color: #0b7ffd;
+    font-size: 16px;
+    color: #ffffff;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+
+.progress-bar-desktop .location-link a {
+    color: blue;
+  }
+
+  .progress-bar-desktop .business-closed{
+      color: red;
+  }
+  
+  .mdl-progress-red > .bufferbar {
+    background-image: linear-gradient(to right, rgba(255,255,255, 0.7), rgba(255,255,255, 0.7)), linear-gradient(to right, rgb(255,0,0), rgb(255,0,0))  !important;
+}
+
+.mdl-progress-red > .auxbar {
+    background-image: linear-gradient(to right, rgba(255,255,255, 0.9), rgba(255,255,255, 0.9)), linear-gradient(to right, rgb(255,0,0), rgb(255,0,0))  !important;
+}
+
+.mdl-progress-red > .progressbar {
+    background-color: rgb(255,0,0) !important;
+}
+
+.mdl-progress-orange > .bufferbar {
+    background-image: linear-gradient(to right, rgba(255,227,199, 0.7), rgba(255,227,199, 0.7)), linear-gradient(to right, rgb(255,145,0), rgb(255,145,0))  !important;
+}
+
+.mdl-progress-orange > .auxbar {
+    background-image: linear-gradient(to right, rgba(255,227,199, 0.9), rgba(255,227,199, 0.9)), linear-gradient(to right, rgb(255,145,0), rgb(255,145,0))  !important;
+}
+
+.mdl-progress-orange > .progressbar {
+    background-color: rgb(255,145,0) !important;
+}
+
+.mdl-progress-yellow > .bufferbar {
+    background-image: linear-gradient(to right, rgba(255,255,206, 0.7), rgba(255,255,206, 0.7)), linear-gradient(to right, rgb(240,220,0), rgb(240,220,0))  !important;
+}
+
+.mdl-progress-yellow > .auxbar {
+    background-image: linear-gradient(to right, rgba(255,255,206, 0.9), rgba(255,255,206, 0.9)), linear-gradient(to right, rgb(240,220,0), rgb(240,220,0))  !important;
+}
+
+.mdl-progress-yellow > .progressbar {
+    background-color: rgb(240,220,0) !important;
+}
+
+.mdl-progress-green > .bufferbar {
+    background-image: linear-gradient(to right, rgba(214,255,214, 0.7), rgba(214,255,214, 0.7)), linear-gradient(to right, rgb(0,153,0), rgb(0,153,0))  !important;
+}
+
+.mdl-progress-green > .auxbar {
+    background-image: linear-gradient(to right, rgba(214,255,214, 0.9), rgba(214,255,214, 0.9)), linear-gradient(to right, rgb(0,153,0), rgb(0,153,0))  !important;
+}
+
+.mdl-progress-green > .progressbar {
+    background-color: rgb(0,153,0) !important;
+}

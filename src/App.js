@@ -1,26 +1,125 @@
 import React from 'react';
-import logo from './logo.svg';
+import Desktop from './DeskTop/Main/main.js';
+import Mobile from './Mobile/Main/main.js';
+import {getConfigData} from './dbUtils/db.js';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//import * as fs from 'fs';
+
+//const mongoose = require("mongoose");
+//const { Schema, connect } = require("mongoose");
+
+
+class  App extends React.Component {
+  constructor(props) {
+		//#region Asher.DataSet
+        super(props);
+        this.state = {
+            isOpen: false,
+            width: window.innerWidth,
+            
+            lhkbh   : "בס''ד",
+            
+            user : null,  
+            password: null,
+            port: null,
+            mongoDBURL : null,
+            
+
+            version : "2020-03-01",
+            developer : "Charity! Asher Malkiel Sandler <asher.sandler770@gmail.com>",
+			direction : "rtl",
+			slidesCount : 10,
+			dateUntil  : undefined,
+			summWanted : undefined,
+			summHarvested : undefined
+			
+        }
+
+        getConfigData('/data/config.json',this.onLoadConfig);
+		
+       
+
+        //this.expressConnect();
+   
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+    let elem = document.getElementById('root');
+	elem.style.direction=this.state.direction;
+	
+	
+
+
+}
+
+componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+
+}
+
+  handleWindowSizeChange = () => {
+    this.setState({width: window.innerWidth});
+}
+
+
+onLoadConfig = (data) => {
+  this.setState({user: data.user,
+                    port: data.port,
+                    password: data.password,
+                    mongoDBURL : data.mongodburl,
+					dateUntil  : data.dateUntil,
+					summWanted : data.summWanted,
+					summHarvested : data.summHarvested 
+					
+  })
+}
+/*
+ expressConnect = async () =>{
+  
+  try{
+     connect(this.state.mongoDBURL, {
+      useNewUrlParser:true
+    });
+  
+  }
+  catch (e)
+  {
+    console.log('Server Error', e.message)
+    //process.exit(1);
+  }
+  }
+  
+*/
+  render(){
+    const {width} = this.state;
+    const isMobile = width <= 700;
+
+    
+    if (isMobile){
+          return (
+            <Mobile user={this.state.user} dir={this.state.direction} 
+				slidesCount   = {this.state.slidesCount} 
+				dateUntil     = {this.state.dateUntil}
+				summWanted    = {this.state.summWanted}
+				summHarvested = {this.state.summHarvested}
+				/>
+          )
+    }
+    else
+    {
+          return (
+          <Desktop  user={this.state.user} dir={this.state.direction} 
+				slidesCount   = {this.state.slidesCount} 
+				dateUntil     = {this.state.dateUntil}
+				summWanted    = {this.state.summWanted}
+				summHarvested = {this.state.summHarvested}
+				/>
+          )
+    }
+  
+   }
 }
 
 export default App;

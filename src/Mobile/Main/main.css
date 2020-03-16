@@ -1,0 +1,49 @@
+/*html,body {*/
+/*  width: 100%;*/
+/*  margin: 0px;*/
+/*  padding: 0px;*/
+/*  overflow-x: hidden;*/
+/*}*/
+
+.load {
+  text-align: center;
+}
+
+.mobile {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+}
+
+.mobile .wrapper {
+}
+
+/*slider styles*/
+
+.mobile .arrow {
+  width: 25px;
+  /*height: 18px;*/
+  object-fit: contain;
+  position: absolute;
+}
+
+.mobile .next {
+  right: 0px;
+  cursor: pointer;
+}
+
+.mobile .prev {
+  right: 35px;
+  cursor: pointer;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:visited {
+  color: #ffffff;
+}
