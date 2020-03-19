@@ -3,7 +3,7 @@ import { Grid, Cell } from 'react-mdl';
 import './PBar.css';
 
 import Bar from './bar.js';
-import {mClass, moneyFormat} from '../../Utils/Utils.js';
+import {mClass } from '../../Utils/Utils.js';
 //import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 //import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 
@@ -24,11 +24,7 @@ class PBar extends Component{
 
     render(){
  
-        
-                                     
-
-           
-
+ 
         return(
             <div className={mClass("progress-bar-desktop",this.props.dir)}>
 				<Grid>
@@ -40,8 +36,12 @@ class PBar extends Component{
 				/* style={{ height: "20px"}}/>
 				
 				*/}
-				<Bar skill={(moneyFormat(this.props.summHarvested) + " ₪")}
-                      progress={110}/>
+				<Bar 
+					  procent={this.props.procent} 	
+					  summHarvested={this.props.summHarvested} 	
+                      progress={this.props.procent} 
+					  timeTillDate={this.props.timeTillDate}/>
+					  
 				</Cell>
 				</Grid>
 				<img src="/img/beit-habad/ramot.jpg" className="image" alt="Shutafim beAhava" />

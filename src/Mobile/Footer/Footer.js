@@ -55,32 +55,36 @@ class Footer extends React.Component {
                 </tr>
 				*/}
 				<tr>
-					
-                    <td className="legal" dir="ltr" style={{transform: "translateX(55%)"}}>
-						<i className="fa fa-phone little-phone" aria-hidden="true"></i>
-                       +972 58-770-6052
+                    <td >
+						<a href="https://www.google.ru/maps/@31.8179396,35.1945359,3a,75y,243.95h,87.54t/data=!3m6!1e1!3m4!1sAF1QipNbLcwA45Gng9NMibygzDvQbxofwtIH5PlNVM2J!2e10!7i11258!8i5629" target="_blank" rel="noopener noreferrer" title="Beit Habad Ramot">
+						<i className="fa fa-home little-phone" aria-hidden="true"></i>
+                       קניון רמות, גולדה מאיר 255 ירושלים 
+					   </a>
                     </td >
-								
 				</tr>
+				
 				<tr>
+                    <td >
+						<i className="fa fa-phone little-phone" aria-hidden="true"></i>
+                       02-586-0067
+                    </td >
+				</tr>
+				
+				<tr>
+                    <td >
 					
-                    <td className="legal" dir="ltr" style={{transform: "translateX(55%)"}}>
-					 <a href="mailto:bcr770@gmail.com" target="_blank" rel="noopener noreferrer" title="Facebook">
-                                        
-                               
+						<a href="mailto:bcr770@gmail.com" target="_blank" rel="noopener noreferrer" title="Send Mail">
 						<i className="fa fa-envelope-o little-phone" aria-hidden="true"></i>
                        bcr770@gmail.com
-					   
-                        </a>
+						</a>
+						
                     </td >
-								
-				</tr>				
-                <tr>
+				</tr>
 				
-                    <td className="legal">
-                        © Beit Habad Ramot  2020
+                <tr>
+                    <td >
+                        ©&nbsp;2020&nbsp;Beit Habad Ramot 
                     </td >
-					
 					{/*
                     <td className="center-column" />
                     <td className="legal">
@@ -89,7 +93,7 @@ class Footer extends React.Component {
                     </td>
 					*/}
                 </tr>
-				
+				{/*
 				<tr>
 				<hr />
 				
@@ -139,7 +143,8 @@ class Footer extends React.Component {
                         </table>
                         </div>
                     </td>
-                </tr>	
+                </tr>
+				*/}
 				
                 </tbody>
             </table>

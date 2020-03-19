@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './youtube.css';
-import {mClass } from '../../Utils/Utils.js';
+//import {mClass } from '../../Utils/Utils.js';
 
 
 
@@ -14,7 +14,7 @@ class YouTube extends Component {
 	   
 	   <div className="youtube-mobile">
 
-			<object data={this.props.youtube} className="youtube-mobile"/>
+			<object data={this.props.youtube} className="youtube-mobile" alt="YouTube" title="Video"/>
 				 
 
             </div>

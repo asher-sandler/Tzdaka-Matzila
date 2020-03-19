@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 import './LargeCarousel.css';
-import {mClass } from '../../Utils/Utils.js';
+//import {mClass } from '../../Utils/Utils.js';
 
 class LargeCarousel extends Component {
     constructor(props) {

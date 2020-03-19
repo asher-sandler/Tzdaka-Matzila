@@ -18,7 +18,7 @@ class YouTube extends Component {
             <div className={mClass("youtube-desktop",this.props.dir)}>
 			
 			<div className="video-border" />
-			<object data={this.props.youtube} className="video-mobile"/>
+			<object data={this.props.youtube} className="video-mobile" alt="YouTube" title="Video"/>
 			
 			</div>
                 

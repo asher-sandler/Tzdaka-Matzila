@@ -10,7 +10,7 @@ import PayModule from '../PayModule/PayModule';
 import YouTube from '../YouTube/YouTube';
 import LargeCarousel from '../Carousel/LargeCarousel';
 import Footer from '../Footer/Footer';
-import Features from '../Features/Features.js';
+//import Features from '../Features/Features.js';
 
 import {getYouTube} from '../../Utils/Utils.js';
 
@@ -18,7 +18,7 @@ class Desktop extends React.Component {
 render(){
     //let user = (this.props.user === undefined ? "": this.props.user);
 	let ytube =  getYouTube("https://www.youtube.com/watch?v=1SMjTMuTpoY");
-
+//DeskTop
     return(
            <div className="desktop" >
 				<div className="wrapper">
@@ -31,11 +31,13 @@ render(){
 									<Aim dir={this.props.dir} 				
 										summWanted    = {this.props.summWanted}
 										summHarvested = {this.props.summHarvested}
+										timeTillDate={this.props.dateUntil}										
 									/>
 									
 									<PBar dir={this.props.dir}
 										summWanted    = {this.props.summWanted}
-										summHarvested = {this.props.summHarvested}									
+										summHarvested = {this.props.summHarvested} procent={(this.props.summHarvested/this.props.summWanted*100).toFixed(2)}
+										timeTillDate={this.props.dateUntil}									
 									/>
 									<CountDown timeTillDate={this.props.dateUntil} dir={this.props.dir}/>
 										{/*

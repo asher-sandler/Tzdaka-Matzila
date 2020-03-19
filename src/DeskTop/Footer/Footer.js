@@ -20,11 +20,13 @@ class Footer extends React.Component {
                     <td  className="center-column titles">
                         <strong>Download</strong>
                     </td>
-					*/}
+					
                     <td className="titles">
                         <strong>Social Media</strong>
                     </td>
+					*/}
                 </tr>
+				{/*
                 <tr>
                     <td>
                         <a className="footer-link" href="https://beithabadramot" target="_blank" rel="noopener noreferrer" title="To Site">Beit Habad Ramot</a>
@@ -34,6 +36,7 @@ class Footer extends React.Component {
                         <a className="app-link" href="https://apps.apple.com/us/app/stops-com/id1349673464" rel="noopener noreferrer">iOS App</a>
                     </td>
 					*/}
+					{/*
                     <td>
                         <div className="social-media">
                         <table className="social-media-table">
@@ -71,6 +74,7 @@ class Footer extends React.Component {
                         </div>
                     </td>
                 </tr>
+				/*}
 				{/*
                 <tr>
 				
@@ -94,15 +98,40 @@ class Footer extends React.Component {
 				<tr>
 					
                     <td className="legal" dir="ltr">
+						<a href="https://www.google.ru/maps/@31.8179396,35.1945359,3a,75y,243.95h,87.54t/data=!3m6!1e1!3m4!1sAF1QipNbLcwA45Gng9NMibygzDvQbxofwtIH5PlNVM2J!2e10!7i11258!8i5629" target="_blank" rel="noopener noreferrer" title="Beit Habad Ramot">
+						<i className="fa fa-home little-phone" aria-hidden="true"></i>
+                       קניון רמות, גולדה מאיר 255 ירושלים 
+					   </a>
+                    </td >
+								
+				</tr>
+				
+				<tr>
+					
+                    <td className="legal" dir="ltr">
 						<i className="fa fa-phone little-phone" aria-hidden="true"></i>
                        +972 58-770-6052
                     </td >
 								
 				</tr>
+				
+				<tr>
+					
+                    <td className="legal" dir="ltr">
+						<a href="mailto:bcr770@gmail.com" target="_blank" rel="noopener noreferrer" title="Send Mail">
+                                        
+                               
+						<i className="fa fa-envelope-o little-phone" aria-hidden="true"></i>
+                       bcr770@gmail.com
+					   
+                        </a>
+                    </td >
+								
+				</tr>				
                 <tr>
 				
-                    <td className="legal">
-                        © Beit Habad Ramot  2020
+                    <td className="legal" dir="ltr">
+                        ©&nbsp;Beit Habad Ramot. 2020
                     </td >
 					
 					{/*

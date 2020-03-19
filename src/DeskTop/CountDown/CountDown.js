@@ -29,7 +29,7 @@ class CountDown extends React.Component {
 			var mLag = mnsLag(nowDate, this.state.untilDate);
 			var sLag = secsLag(nowDate, this.state.untilDate);
 
-            const { timeTillDate, timeFormat } = this.props;
+            //const { timeTillDate, timeFormat } = this.props;
  
             const days = dLag;
             const hours = hLag; //countdwn.format('HH') ;
@@ -62,7 +62,9 @@ class CountDown extends React.Component {
         return (
             <div className={mClass("countdown",this.props.dir)}>
                 <h1>ספירה לאחור</h1>
+				{/*
 				<h1>{this.state.untilStr}</h1>
+				*/}
                 <div className="countdown-wrapper">
                     {(
                         <div className="countdown-item">

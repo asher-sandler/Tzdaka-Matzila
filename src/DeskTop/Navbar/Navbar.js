@@ -16,11 +16,12 @@ class Navbar extends React.Component {
             <div className="navbar-container">
                 <img className="logo" src={logo} alt="Beit Habad Ramot" />
 					
-                
+				{/*
                 <div id="navbar" className="navbar-text">
                     <div className="shared-by">Shared by:</div>
                         <div className="name"><strong>Rav Yakov Zonnenfeld </strong></div>
                 </div>
+				*/}
             </div>
         </div>
     );

@@ -1,7 +1,8 @@
 import React from 'react';
 import Desktop from './DeskTop/Main/main.js';
 import Mobile from './Mobile/Main/main.js';
-import {getConfigData} from './dbUtils/db.js';
+import {getGoogleTable, getLangData} from './dbUtils/db.js';
+//import {getConfigData} from './dbUtils/db.js';
 import './App.css';
 
 //import * as fs from 'fs';
@@ -33,11 +34,16 @@ class  App extends React.Component {
 			slidesCount : 10,
 			dateUntil  : undefined,
 			summWanted : undefined,
-			summHarvested : undefined
+			summHarvested : undefined,
+			langArray    : undefined
 			
         }
 
-        getConfigData('/data/config.json',this.onLoadConfig);
+        //getConfigData('/data/config.json',this.onLoadConfig);
+		
+		getGoogleTable(this.onLoadGoogleTable);
+		
+		getLangData('en',this.onLoadLang);
 		
        
 
@@ -75,6 +81,34 @@ onLoadConfig = (data) => {
 					summHarvested : data.summHarvested 
 					
   })
+}
+
+
+onLoadGoogleTable = (data) => {
+	let conf = data.feed.entry[0];
+	//console.log('Google Table: ', data.feed.entry);
+	//console.log('Conf Table: ', conf);	
+	let dUntil = conf.gsx$dateuntil['$t'];
+	let sWant  = conf.gsx$summwanted['$t'];
+	let sHarv  = conf.gsx$summharvested['$t'];
+	
+	//console.log(dUntil,sWant,sHarv);
+	
+	this.setState({
+			dateUntil     : dUntil,
+			summWanted    : sWant,
+			summHarvested : sHarv 			
+	})
+}
+
+
+onLoadLang = (data) => {
+	//console.log('Lang: ', data);
+	//console.log('Lang strings: ', data.strings);
+	
+	//console.log('Lang strings S003: ', new Map(data.strings[0]));
+	
+	
 }
 /*
  expressConnect = async () =>{

@@ -20,15 +20,8 @@ class PBar extends Component{
 
     }
 
-
-
     render(){
  
-        
-                                     
-
-           
-
         return(
             <div className={mClass("progress-bar-mobile",this.props.dir)}>
 				<Grid>
@@ -40,8 +33,10 @@ class PBar extends Component{
 				/* style={{ height: "20px"}}/>
 				
 				*/}
-				<Bar skill={(moneyFormat(this.props.summHarvested) + " ₪")}
-                      progress={110}/>
+				<Bar skill={(moneyFormat(this.props.summHarvested) +  " ₪"  )}
+                      progress={this.props.procent} 
+					  timeTillDate={this.props.timeTillDate} />
+					  
 				</Cell>
 				</Grid>
 				<img src="/img/beit-habad/ramot.jpg" className="image" alt="Shutafim beAhava" />

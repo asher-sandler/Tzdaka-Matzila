@@ -23,6 +23,7 @@ class CountDown extends React.Component {
 
 
     componentDidMount() {
+		
 
         this.interval = setInterval(() => {
 			let nowDate = new Date();
@@ -31,7 +32,7 @@ class CountDown extends React.Component {
 			var mLag = mnsLag(nowDate, this.state.untilDate);
 			var sLag = secsLag(nowDate, this.state.untilDate);
 
-            const { timeTillDate, timeFormat } = this.props;
+            //const { timeTillDate, timeFormat } = this.props;
  
             const days = dLag;
             const hours = hLag; //countdwn.format('HH') ;
@@ -64,10 +65,20 @@ class CountDown extends React.Component {
             return null;
         }
 */
+		//console.log(days,hours,minutes,seconds);
+		if (days === 0 && hours === 0 && minutes === 0  && seconds === "00"){
+			return (<div className={mClass("countdown-mobile",this.props.dir)}>
+						<h1>ספירה לאחור הסתיימה</h1>
+					</div>);
+		}
+		else
+		{	
         return (
             <div className={mClass("countdown-mobile",this.props.dir)}>
                 <h1>ספירה לאחור</h1>
+				{/*
 				<h1>{this.state.untilStr}</h1>
+				*/}
                 <div className="countdown-mobile-wrapper">
                     {
 						(
@@ -109,7 +120,8 @@ class CountDown extends React.Component {
                     )}
                 </div>
             </div>
-        );
+        )
+		}
     }
 }
 /*
