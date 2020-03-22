@@ -58,7 +58,13 @@ class CountDown extends React.Component {
         // if (!seconds) {
             // return null;
         // }
-
+		if (days === 0 && hours === 0 && minutes === 0  && seconds === "00"){
+			return (<div className={mClass("countdown-mobile",this.props.dir)}>
+						<h1>ספירה לאחור הסתיימה</h1>
+					</div>);
+		}
+		else
+		{
         return (
             <div className={mClass("countdown",this.props.dir)}>
                 <h1>ספירה לאחור</h1>
@@ -104,7 +110,8 @@ class CountDown extends React.Component {
                     )}
                 </div>
             </div>
-        );
+        )
+		}
     }
 }
 /*

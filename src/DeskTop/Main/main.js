@@ -10,6 +10,7 @@ import PayModule from '../PayModule/PayModule';
 import YouTube from '../YouTube/YouTube';
 import LargeCarousel from '../Carousel/LargeCarousel';
 import Footer from '../Footer/Footer';
+import Donators from '../PanelDonators/Donators.js';
 //import Features from '../Features/Features.js';
 
 import {getYouTube} from '../../Utils/Utils.js';
@@ -44,6 +45,7 @@ render(){
 									<LoadForm src='https://www.matara.pro/nedarimplus/online/?mosad=7001560' />
 										*/}
 									<PayModule dir={this.props.dir} />
+									<Donators dir={this.props.dir} />
 									<YouTube dir={this.props.dir} youtube={ytube}/>
 									<LargeCarousel slidesCount={this.props.slidesCount} dir={this.props.dir}/>
 										{/*

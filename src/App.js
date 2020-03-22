@@ -28,7 +28,7 @@ class  App extends React.Component {
             mongoDBURL : null,
             
 
-            version : "2020-03-17",
+            version : "2020-03-23",
             developer : "Charity! Asher Malkiel Sandler <asher.sandler770@gmail.com>",
 			direction : "rtl",
 			slidesCount : 10,
@@ -103,6 +103,10 @@ onLoadGoogleTable = (data) => {
 
 
 onLoadLang = (data) => {
+	
+	this.setState(
+	{langArray : data}
+	);
 	//console.log('Lang: ', data);
 	//console.log('Lang strings: ', data.strings);
 	
@@ -139,6 +143,7 @@ onLoadLang = (data) => {
 				dateUntil     = {this.state.dateUntil}
 				summWanted    = {this.state.summWanted}
 				summHarvested = {this.state.summHarvested}
+				langArray	  = {this.state.langArray}
 				/>
           )
     }
@@ -150,6 +155,7 @@ onLoadLang = (data) => {
 				dateUntil     = {this.state.dateUntil}
 				summWanted    = {this.state.summWanted}
 				summHarvested = {this.state.summHarvested}
+				langArray	  = {this.state.langArray}
 				/>
           )
     }

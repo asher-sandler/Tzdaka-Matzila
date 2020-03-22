@@ -1,7 +1,20 @@
-{"strings": 
+{"en": 
+	{"strings": 
 	[
-		{"s001" : "Shma Israel, "},
-		{"s002" : "ASHEM ELOKEINU"},
-		{"s003" : "ASHEM EHAAAADDDDD!!!!"}
+		{"name" : "Listen Israel, "},
+		{"name" : "ASHEM ELOKEINU"},
+		{"name" : "ASHEM EHAAAADDDDD!!!!"}
 	]
+	,
+	"direction": "rtl"}
+	,
+"ru": 
+	{"strings": 
+	[
+		{"name" : "Shma Israel, "},
+		{"name" : "ASHEM ELOKEINU"},
+		{"name" : "ASHEM EHAAAADDDDD!!!!"}
+	]
+	,
+	"direction": "rtl"}	
 }
