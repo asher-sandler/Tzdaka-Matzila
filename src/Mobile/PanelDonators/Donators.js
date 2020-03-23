@@ -9,7 +9,6 @@ import {List,ListItem,ListItemContent, Icon} from 'react-mdl';
 import './Donators.css';
 
 class Donator extends Component {
-	
 	tormim = (el,key) => {
 		
 		let ret = "";
@@ -38,47 +37,48 @@ class Donator extends Component {
 							{el.gsx$donationamount["$t"]}
 						</div>
 				  	
-				  </ListItem>	
+				  </ListItem>
+				  
+				  
+					
 		)
 		//console.log(el)
 		
 		return ret;
 	}
 
+	
     render() {
-		//console.log(this.props.tormimPerson);
+		console.log(this.props.tormimPerson);
 		if (this.props.tormimCount > 0){
 		//if (false){	
         return (
-            <div className={mClass("donat",this.props.dir)}>
+            <div className={mClass("donat-mobile",this.props.dir)}>
 				<h1 className="title" align="center">רשימת תרומות: {this.props.tormimCount} תורמים</h1>
-			<div className="list-body"	>
-			<List >
-			{
-				
-				this.props.tormimPerson.map((elem,idx) =>(
-				<div key={idx}>
-						{this.tormim(elem,idx)}
-							  
-				</div>
-				)
-                ) 
-				
-			}
-
-
-	
+				<div className="list-body"	>
+					<List >
+						{
+							
+							this.props.tormimPerson.map((elem,idx) =>(
+							<div key={idx}>
+									{this.tormim(elem,idx)}
+										  
+							</div>
+							)
+							) 
+							
+						}
 				  
 				  </List>
 				</div>  
             </div>
-        );
+		);
     }
 	else
 	{
 		return (<div></div>)
-	}
-	}
+	}	
+    }
 }
 
 export default Donator;

@@ -1,8 +1,8 @@
-.donat-rtl {
-	width: 840px;
+.donat-mobile-rtl {
+
 
     margin: 0 auto;
-	border-radius: 20px;
+	/* border-radius: 20px; */
     border: 1px solid transparent;
 	background-color: #e4e7e8;
 
@@ -15,7 +15,20 @@
 
 }
 
-.donat-rtl .title{
+.donat-mobile-rtl .icon {
+	
+	 font-size:3rem;
+	 border-radius: 50%;
+	 background-color: rgb(117,117,117);
+	 margin-left:50px
+}
+
+.donat-mobile-rtl .list-item{
+	border-bottom: 1px solid #d2d3d5;	
+	
+}
+
+.donat-mobile-rtl .title{
 	margin-top: 0;
     margin-bottom: 0;
     font-size: 25px;
@@ -24,26 +37,12 @@
 	border-bottom: 2px solid black;	
 }
 
-
-.donat-rtl .icon {
-	
-	 font-size:3rem;
-	 border-radius: 50%;
-	 background-color: rgb(117,117,117);
-	 margin-left:50px
-}
-
-.donat-rtl .list-body{
-		height: 400px;
+.donat-mobile-rtl .list-body{
+		height: 300px;
 		overflow-y:scroll;
 }
 
-.donat-rtl .list-item{
-	border-bottom: 1px solid #d2d3d5;	
-	
-}
-
-.donat-rtl .amount {
+.donat-mobile-rtl .amount {
 	display: block;
     font-size: 20px;
 	font-weight:bold;
@@ -51,7 +50,7 @@
 }
 
 
-.donat-rtl .currency-symbol{
+.donat-mobile-rtl .currency-symbol{
 	display:inline;
 	direction: rtl;
 	margin-right:10px

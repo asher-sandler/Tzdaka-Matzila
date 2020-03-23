@@ -2,6 +2,8 @@ import React from 'react';
 import Desktop from './DeskTop/Main/main.js';
 import Mobile from './Mobile/Main/main.js';
 import {getGoogleTable, getLangData} from './dbUtils/db.js';
+import {numProps} from './Utils/Utils.js';
+
 //import {getConfigData} from './dbUtils/db.js';
 import './App.css';
 
@@ -35,7 +37,10 @@ class  App extends React.Component {
 			dateUntil  : undefined,
 			summWanted : undefined,
 			summHarvested : undefined,
-			langArray    : undefined
+			langArray    : undefined,
+			tormimPerson : undefined,
+			tormimCount  : 0,
+			procent		 : 0	
 			
         }
 
@@ -79,6 +84,7 @@ onLoadConfig = (data) => {
 					dateUntil  : data.dateUntil,
 					summWanted : data.summWanted,
 					summHarvested : data.summHarvested 
+			
 					
   })
 }
@@ -88,16 +94,32 @@ onLoadGoogleTable = (data) => {
 	let conf = data.feed.entry[0];
 	//console.log('Google Table: ', data.feed.entry);
 	//console.log('Conf Table: ', conf);	
-	let dUntil = conf.gsx$dateuntil['$t'];
-	let sWant  = conf.gsx$summwanted['$t'];
-	let sHarv  = conf.gsx$summharvested['$t'];
+	let dUntil  = conf.gsx$dateuntil['$t'];
+	let sWant   = conf.gsx$summwanted['$t'];
+	let sHarv   = conf.gsx$summharvested['$t'];
+	let proc    = parseFloat(conf.gsx$progressproc['$t']);
+	let oTormim = data.feed.entry;
+	/*
+	let oTormim = Object.entries(data.feed.entry).map(tormim => {
+		return {all : tormim[1],
+				person :  tormim[1].gsx$name["$t"],
+				phone  :  tormim[1].gsx$phone["$t"],
+				summ   :  tormim[1].gsx$summ["$t"],
+				email  :  tormim[1].gsx$email["$t"],
+				address:  tormim[1].gsx$address["$t"]}
+	})
+	*/
+	
 	
 	//console.log(dUntil,sWant,sHarv);
 	
 	this.setState({
 			dateUntil     : dUntil,
 			summWanted    : sWant,
-			summHarvested : sHarv 			
+			summHarvested : sHarv,
+			tormimPerson  : oTormim,	
+			tormimCount  :  numProps(oTormim),
+			procent      : 	proc
 	})
 }
 
@@ -144,6 +166,9 @@ onLoadLang = (data) => {
 				summWanted    = {this.state.summWanted}
 				summHarvested = {this.state.summHarvested}
 				langArray	  = {this.state.langArray}
+				tormimPerson  = {this.state.tormimPerson}
+				tormimCount   = {this.state.tormimCount}
+				procent       = {this.state.procent}
 				/>
           )
     }
@@ -156,6 +181,9 @@ onLoadLang = (data) => {
 				summWanted    = {this.state.summWanted}
 				summHarvested = {this.state.summHarvested}
 				langArray	  = {this.state.langArray}
+				tormimPerson  = {this.state.tormimPerson}
+				tormimCount   = {this.state.tormimCount}
+				procent       = {this.state.procent}				
 				/>
           )
     }

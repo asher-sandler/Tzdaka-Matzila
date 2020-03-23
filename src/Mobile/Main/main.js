@@ -7,7 +7,7 @@ import CountDown from '../CountDown/CountDown.js';
 import PayModule from '../PayModule/PayModule';
 import YouTube from '../YouTube/YouTube';
 import LargeCarousel from '../Carousel/LargeCarousel';
-
+import Donators from '../PanelDonators/Donators.js';
 import Footer from '../Footer/Footer';
 
 
@@ -32,12 +32,18 @@ render(){
 				<PBar dir={this.props.dir}
 					summWanted    = {this.props.summWanted}
 					summHarvested = {this.props.summHarvested}	
-					procent={(this.props.summHarvested/this.props.summWanted*100).toFixed(2)}
-					timeTillDate={this.props.dateUntil}					
+					procent		  = {this.props.procent}
+					timeTillDate  = {this.props.dateUntil}					
 				/>
 				
 				<CountDown timeTillDate={this.props.dateUntil}  dir={this.props.dir}/>
 				<PayModule dir={this.props.dir} />
+				
+				<Donators dir={this.props.dir} 
+				tormimPerson  = {this.props.tormimPerson}
+				tormimCount   = {this.props.tormimCount}	
+				/>
+				
 				<YouTube dir={this.props.dir} youtube={ytube}/>
 				
 				

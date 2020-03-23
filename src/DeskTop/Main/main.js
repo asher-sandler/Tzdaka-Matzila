@@ -37,15 +37,21 @@ render(){
 									
 									<PBar dir={this.props.dir}
 										summWanted    = {this.props.summWanted}
-										summHarvested = {this.props.summHarvested} procent={(this.props.summHarvested/this.props.summWanted*100).toFixed(2)}
-										timeTillDate={this.props.dateUntil}									
+										summHarvested = {this.props.summHarvested} 
+										procent       = {this.props.procent}
+										timeTillDate  = {this.props.dateUntil}									
 									/>
 									<CountDown timeTillDate={this.props.dateUntil} dir={this.props.dir}/>
 										{/*
 									<LoadForm src='https://www.matara.pro/nedarimplus/online/?mosad=7001560' />
 										*/}
 									<PayModule dir={this.props.dir} />
-									<Donators dir={this.props.dir} />
+									
+									<Donators dir={this.props.dir} 
+										tormimPerson  = {this.props.tormimPerson}
+										tormimCount   = {this.props.tormimCount}
+									/>
+									
 									<YouTube dir={this.props.dir} youtube={ytube}/>
 									<LargeCarousel slidesCount={this.props.slidesCount} dir={this.props.dir}/>
 										{/*

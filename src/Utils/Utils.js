@@ -114,7 +114,7 @@ export function formatDate( sdte) {
 export function moneyFormat (summ) {
 	let ret = ""
 	if 	(summ !== undefined){
-		ret = new Intl.NumberFormat('he-IL').format(summ)
+		ret = parseFloat(summ);
 	}
 	
 	return ret;
@@ -122,5 +122,15 @@ export function moneyFormat (summ) {
 	
 }
 // **************************************************** //
+
+export function numProps(obj) {
+	let c = 0;
+	for (var key in obj) {
+		if (obj.hasOwnProperty(key)) ++c;
+	}
+	return c;
+}
+// **************************************************** //
+
 
 

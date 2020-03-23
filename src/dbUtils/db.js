@@ -21,7 +21,7 @@ export async function getGoogleTable( onDataLoad){
 	//console.log(data);
 	
 	currentDaf = data.feed.entry[0].gsx$currentdaf['$t']
-	console.log('Daf', currentDaf);
+	//console.log('Daf', currentDaf);
 	
 	
 	if (currentDaf !== "1")
