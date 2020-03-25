@@ -30,7 +30,7 @@ class  App extends React.Component {
             mongoDBURL : null,
             
 
-            version : "2020-03-23",
+            version : "2020-03-26",
             developer : "Charity! Asher Malkiel Sandler <asher.sandler770@gmail.com>",
 			direction : "rtl",
 			slidesCount : 15,
