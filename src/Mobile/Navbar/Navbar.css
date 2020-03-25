@@ -11,6 +11,12 @@
     position: relative;
 }
 
+.navbar-mobile-rtl .bsd {
+	color: white;
+	font-size: 4px;
+	margin-right: 2px;
+}
+
 .navbar-mobile-rtl .logo {
     height: 100%;
     

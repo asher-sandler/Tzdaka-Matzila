@@ -12,6 +12,13 @@
     position: relative;
 }
 
+.navbar-desktop-rtl .bsd {
+	color: white;
+	font-size: 8px;
+	margin-right: 4px;
+	direction: rtl;
+}	
+
 .navbar-desktop-rtl .logo {
     /* width: 97px; */
     height: 100%;

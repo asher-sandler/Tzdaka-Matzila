@@ -10,6 +10,7 @@ class  Navbar extends React.Component {
         
     return (
         <div className={mClass("navbar-mobile",this.props.dir)}>
+			<div className="bsd">בְּסָ"ד</div>
             <img className="logo" src="/img/beit-habad/habad-ramot.png" alt="Beit Habad Ramot" />
             {/*
             <div className="navbar-text">

@@ -13,7 +13,9 @@ class Navbar extends React.Component {
 	 
     return (
         <div className={mClass("navbar-desktop",this.props.dir)}>
+			
             <div className="navbar-container">
+			<div className="bsd">בְּסָ"ד</div>
                 <img className="logo" src={logo} alt="Beit Habad Ramot" />
 					
 				{/*

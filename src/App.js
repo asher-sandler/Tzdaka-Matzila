@@ -33,7 +33,7 @@ class  App extends React.Component {
             version : "2020-03-23",
             developer : "Charity! Asher Malkiel Sandler <asher.sandler770@gmail.com>",
 			direction : "rtl",
-			slidesCount : 10,
+			slidesCount : 15,
 			dateUntil  : undefined,
 			summWanted : undefined,
 			summHarvested : undefined,
