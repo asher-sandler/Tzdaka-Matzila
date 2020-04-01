@@ -49,7 +49,7 @@ class Donator extends Component {
 
 	
     render() {
-		console.log(this.props.tormimPerson);
+		//console.log(this.props.tormimPerson);
 		if (this.props.tormimCount > 0){
 		//if (false){	
         return (

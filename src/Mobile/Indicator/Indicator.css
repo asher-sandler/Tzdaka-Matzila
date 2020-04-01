@@ -1,0 +1,40 @@
+
+ .indicator-mobile {
+    /* position: absolute; */
+    top: 40px;
+    left: -15px;
+    z-index: 2;
+    text-align: center;
+    font-size: 10px;
+    padding: 7px;
+    line-height: 10px;
+    font-weight: 700;
+    background-color: #8dc63f;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 2px;
+	height: 10px;
+    width: 15px;
+	/* transform: translate(148%, 125%); */
+}
+
+
+
+.indicator-mea-proc{
+    width: 20px;	
+	
+}
+
+ .indicator-mobile:before {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #8dc63f;
+    content: " ";
+    position: absolute;
+    top: -8px;
+    left: 4px;
+	
+}
+

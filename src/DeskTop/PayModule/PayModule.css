@@ -3,6 +3,8 @@
     width: 900px;
     margin: 0 auto;
 	border-bottom: 1px solid #d2d3d5;
+	padding-bottom: 20px;
+		padding-top: 20px;
  }
 
 .pay-module-desktop-rtl .container {
@@ -29,13 +31,189 @@
 
 
 .pay-module-desktop-rtl  .i-visa{
-	color: blueviolet;
+	color: white;
+	margin-right:10px;
+	
 
-    font-size: 7rem;
+    font-size: 2rem;
 
-	 margin-right: 43%;
+
 
 }
+
+.pay-module-desktop-rtl .block {
+    position: relative;
+    padding: 20px 15px 20px 20px;
+    border: 1px solid #747474;
+    border-top: 1px solid #487922;
+    background: #ededed;
+    margin: 20px;
+	font-size:24px;
+	font-family: 'Assistant', sans-serif;
+}
+
+.pay-module-desktop-rtl h3{
+	text-align: center;
+}
+
+.pay-module-desktop-rtl .input-control{
+	font-family: 'Assistant', sans-serif;
+	font-size:26px;
+	margin-left:20px;
+	
+	-webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(white, black);
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+	border-radius:4px;
+   
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;	
+	
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.pay-module-desktop-rtl .select-control{
+	font-family: 'Assistant', sans-serif;	
+	font-size:26px;	
+	margin-bottom:20px;	
+}
+
+.pay-module-desktop-rtl .radio-control{
+	margin-bottom:20px;
+	font-family: 'Assistant', sans-serif;	
+	font-size:26px;
+}
+
+.pay-module-desktop-rtl  .flag{
+	display:inline;
+
+	
+}
+
+select#valute option[value="ILS"]   { background-image:url(/img/beit-habad/isrflag.png);   }
+
+.pay-module-desktop-rtl  .image-flag{
+	width:50px;
+	height:50px;
+}
+
+
+
+.dai-tzdaka
+{
+	color:black;
+	text-align: center;
+	font-size: 30px;
+	color: red;
+	
+    font-weight: bold;
+	transform: translate(0%, 400%);
+	text-decoration: none
+}
+
+
+
+.pay-module-desktop-rtl .trom {
+
+    text-align: center;
+	display: block;
+	vertical-align:middle;
+    line-height: 60px;
+    border: 0 none;
+    font-size: 26px;
+    padding-left: 60px; 
+    padding-right: 60px; 
+    -webkit-appearance: none;
+    font-weight: 700;
+    background: none;
+    cursor: pointer;
+    box-sizing: content-box;
+
+    border: 3px solid #000000;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 26px;
+	color: white;	
+	
+	
+	width: 212px;
+	height: 134px;
+	margin: 0 auto;
+
+	/* color: black; */
+	/* z-index: 2; */
+	
+	
+ 	/* background: url(/img/beit-habad/visa.png); */
+	/* background-repeat: no-repeat; */
+	
+	
+
+	/* background: #2193b0;  */ 
+
+	/* background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);   */
+
+	/* background: linear-gradient(to bottom, #6dd5ed, #2193b0);  */
+
+	
+/* background: #23074d;   */
+/* background: -webkit-linear-gradient(to right, #cc5333, #23074d);   */
+/* background: linear-gradient(to right, #cc5333, #23074d);  */
+
+	
+	background-color: #f47721;
+	/* opacity: 0.5; */
+	/* transition: opacity .75s ease-in-out,   transform 0.75s, box-shadow 0.75s,color 0.75s, font-size 0.75s; */
+	transition:  font-size 0.75s;
+}
+
+.pay-module-desktop-rtl .span-trom{
+	
+
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate(0%, 50%);
+}
+
+
+.pay-module-desktop-rtl .trom:hover { 
+	/* opacity: 1; */
+	/* text-align: center; */
+	font-size: 32px;
+	transition:  font-size 0.75s;
+	/* color: white;	 */
+	/* transition: opacity .75s ease-in-out,   transform 0.75s, box-shadow 0.75s, color 0.75s, font-size 0.75s; */
+ } 
+
+
+
+
 
 .pay-module-desktop-rtl .date {
     width: 205px;

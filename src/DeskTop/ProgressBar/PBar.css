@@ -20,6 +20,33 @@
     bottom: 0;
 }
 
+
+.progress-bar-desktop-rtl .talkbubble {
+      width: 120px;
+      height: 80px;
+      background: green;
+      position: relative;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 1px;
+    }
+.progress-bar-desktop-rtl    .talkbubble:before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 26px;
+      width: 0;
+      height: 0;
+      border-top: 13px solid transparent;
+      border-right: 26px solid red;
+      border-bottom: 13px solid transparent;
+    }
+
+.pb-summ-desktop{
+	   font-size: 1.2rem;
+	   font-weight: bold;
+}
+
 .progress-bar-desktop .title {
     height: auto;
     font-size: 28px;

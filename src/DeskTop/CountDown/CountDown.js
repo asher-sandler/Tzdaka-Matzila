@@ -67,8 +67,9 @@ class CountDown extends React.Component {
 		{
         return (
             <div className={mClass("countdown",this.props.dir)}>
-                <h1>ספירה לאחור</h1>
+                
 				{/*
+				<h1>ספירה לאחור</h1>
 				<h1>{this.state.untilStr}</h1>
 				*/}
                 <div className="countdown-wrapper">

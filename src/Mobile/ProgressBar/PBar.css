@@ -21,6 +21,16 @@
 	width: 100%;
 }
 
+.progress-bar-mobile-rtl .summ{
+	font-size: 1.0rem;
+	font-weight: bold;
+	position: relative;
+	left: -80px;
+	width: 80px;
+    color: black;
+	z-index: 5;
+}
+
 .progress-bar-mobile-rtl .title {
     height: auto;
     font-size: 28px;

@@ -47,7 +47,7 @@ class LargeCarousel extends Component {
 				let arr = Array(counts)
 				
 				for(let i = 1; i <= counts; i++){
-					arr[i-1] = "/img/beit-habad/slider/" + i+"-1024x768.jpg";
+					arr[i-1] = "/img/beit-habad/slider/Mobile/" + i+"-1024x768.jpg";
 				}
 				
 				

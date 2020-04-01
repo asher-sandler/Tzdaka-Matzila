@@ -29,13 +29,90 @@
 
 
 .pay-module-mobile-rtl  .i-visa{
-	color: blueviolet;
+	color: white;
+	
+	margin-right:10px;
+	
 
-    font-size: 7rem;
+    font-size: 2rem;
 
-	 margin-right: 43%;
 
 }
+
+.span-trom-mobile{
+	
+
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate(0%, 50%);
+}
+
+
+
+.trom-mobile {
+
+    text-align: center;
+	vertical-align:middle;
+    line-height: 60px;
+    border: 0 none;
+    font-size: 26px;
+    padding-left: 60px; 
+    padding-right: 60px; 
+    -webkit-appearance: none;
+    font-weight: 700;
+    background: none;
+    cursor: pointer;
+    box-sizing: content-box;
+
+    border: 3px solid #000000;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 40px;
+	color: white;	
+
+
+	
+	/* width: 212px; */
+	height: 134px;
+	margin: 0 auto;
+
+	/* color: black; */
+	/* z-index: 2; */
+	
+	
+ 	/* background: url(/img/beit-habad/visa.png); */
+	/* background-repeat: no-repeat; */
+	
+	
+	/* filter: blur(4px);	 */
+	/* background: #2193b0;   */
+	/* background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);   */
+	/* background: linear-gradient(to bottom, #6dd5ed, #2193b0);  */
+
+	
+	/* background: #23074d;   */
+	/* background: -webkit-linear-gradient(to right, #cc5333, #23074d);   */
+	/* background: linear-gradient(to right, #cc5333, #23074d);  */
+
+ 	 /* background: url(/img/beit-habad/100usd.png); 	 */
+	 /* background-repeat: no-repeat;  */
+	background-color: #f47721;
+	
+	/* opacity: 0.5; */
+	/* transition: opacity .75s ease-in-out,   transform 0.75s, box-shadow 0.75s,color 0.75s, font-size 0.75s; */
+	transition:  font-size 0.75s;
+}
+
+.trom-mobile:hover { 
+	/* opacity: 1; */
+	/* text-align: center; */
+	/* font-size: 32px; */
+	/* transition:  font-size 0.75s; */
+	/* color: white;	 */
+	/* transition: opacity .75s ease-in-out,   transform 0.75s, box-shadow 0.75s, color 0.75s, font-size 0.75s; */
+ } 
+
+
 
 .pay-module-mobile-rtl .date {
     width: 205px;

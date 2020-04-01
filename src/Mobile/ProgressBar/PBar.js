@@ -14,12 +14,22 @@ class PBar extends Component{
 
 
         this.state={
-            activeTab : 0
+            count : 0
         }
 
 
     }
+	/*
+    componentDidMount() {
+		
 
+        this.interval = setInterval(() => {
+
+
+            this.setState({ count : this.state.count > 100? 0:  this.state.count + 1});
+        }, 1000);
+    }	
+*/
     render(){
  
         return(
@@ -31,7 +41,9 @@ class PBar extends Component{
 				<ProgressBar className="mdl-progress-green" progress={33} buffer={87} /> 
 				
 				/* style={{ height: "20px"}}/>
-				
+				progress={this.props.procent} 
+				summWanted
+				this.props.summHarvested
 				*/}
 				<Bar skill={(moneyFormat(this.props.summHarvested) +  " ₪"  )}
                       progress={this.props.procent} 

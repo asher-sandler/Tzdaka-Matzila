@@ -9,7 +9,7 @@ import YouTube from '../YouTube/YouTube';
 import LargeCarousel from '../Carousel/LargeCarousel';
 import Donators from '../PanelDonators/Donators.js';
 import Footer from '../Footer/Footer';
-
+import HabadRamot from '../HabadRamot/HabadRamot.js';
 
 
 import {getYouTube} from '../../Utils/Utils.js';
@@ -35,6 +35,7 @@ render(){
 					procent		  = {this.props.procent}
 					timeTillDate  = {this.props.dateUntil}					
 				/>
+				<HabadRamot />
 				
 				<CountDown timeTillDate={this.props.dateUntil}  dir={this.props.dir}/>
 				<PayModule dir={this.props.dir} />

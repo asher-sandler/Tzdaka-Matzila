@@ -114,7 +114,7 @@ export function formatDate( sdte) {
 export function moneyFormat (summ) {
 	let ret = ""
 	if 	(summ !== undefined){
-		ret = parseFloat(summ);
+		ret = new Intl.NumberFormat().format(parseFloat(summ));
 	}
 	
 	return ret;
@@ -131,6 +131,22 @@ export function numProps(obj) {
 	return c;
 }
 // **************************************************** //
+export function isNumber(nValue){
+	let ret = false;
+
+	if ((parseFloat(nValue) === "NaN") || 
+		(parseFloat(nValue) === "Infinity") ||
+		(parseFloat(nValue) === "-Infinity")) 
+		
+	{
+	}
+	else if ((typeof parseFloat(nValue) === 'number') && isFinite(parseFloat(nValue)))
+	{
+		ret=true;
+	}		
+
+	return ret;
+}
 
 
 

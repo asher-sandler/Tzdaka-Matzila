@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Cell, ProgressBar } from 'react-mdl';
+import MyIndic from '../Indicator/Indicator.js';
 
 class Bar extends Component {
 	
@@ -8,9 +9,12 @@ class Bar extends Component {
 		if (this.props.timeTillDate){
 			let prgs = parseFloat(this.props.progress)
 			if (new Date(this.props.timeTillDate) > (new Date())){
+				/*
+					<ProgressBar  className="mdl-progress-green" style={{margin: 'auto', width: '75%', height: "20px"}} progress={prgs} buffer={prgs} /> 
+				*/
 				ret = (
-		  
-		  <ProgressBar  className="mdl-progress-green" style={{margin: 'auto', width: '75%', height: "20px"}} progress={prgs} buffer={prgs} /> 
+				
+				<ProgressBar  className="mdl-progress-green" style={{margin: 'auto', width: '75%', height: "20px"}} progress={prgs} />
 				)
 			}
 			else
@@ -29,8 +33,12 @@ class Bar extends Component {
 		  <Grid>
 			<Cell col={12}>
 				{/* indeterminate buffer={this.props.progress}*/}
-			  <div style={{display: 'flex'}}>{this.props.skill} 
+			  <div style={{display: 'flex'}}>
+			  <div className="summ">
+			  {this.props.skill} 
+			  </div>
 				  {this.getBar()}
+				  <MyIndic procent={this.props.progress}/>
 				  {/*
 			  <ProgressBar  className="mdl-progress-green" style={{margin: 'auto', width: '75%', height: "20px"}} progress={this.props.progress} buffer={this.props.progress}/> 
 				  */}

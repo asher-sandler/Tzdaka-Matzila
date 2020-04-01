@@ -24,6 +24,10 @@
     object-fit: contain;
 }
 
+.footer-desktop a{
+	text-decoration: none
+}
+
 
 .footer-desktop i{
 	color: white;

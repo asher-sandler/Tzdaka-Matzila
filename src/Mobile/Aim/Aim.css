@@ -25,7 +25,7 @@
     object-fit: contain;
     position: absolute;
     top: 20px;
-    right: 220px;
+    right: 270px;
 	
      -webkit-animation: slide 26s linear infinite;
         -moz-animation: slide 26s linear infinite; 
@@ -88,7 +88,7 @@
 .aim-mobile-rtl .summ-aim {
     width: 287px;
     height: 27px;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
@@ -99,7 +99,7 @@
     margin: 0;
     top: 50%;
     -ms-transform: translateY(180%);
-    transform: translateY(180%);
+    transform: translateY(120%);
     right: 30px;
 }
 

@@ -11,6 +11,7 @@ import YouTube from '../YouTube/YouTube';
 import LargeCarousel from '../Carousel/LargeCarousel';
 import Footer from '../Footer/Footer';
 import Donators from '../PanelDonators/Donators.js';
+import HabadRamot from '../HabadRamot/HabadRamot.js';
 //import Features from '../Features/Features.js';
 
 import {getYouTube} from '../../Utils/Utils.js';
@@ -41,6 +42,7 @@ render(){
 										procent       = {this.props.procent}
 										timeTillDate  = {this.props.dateUntil}									
 									/>
+									<HabadRamot />
 									<CountDown timeTillDate={this.props.dateUntil} dir={this.props.dir}/>
 										{/*
 									<LoadForm src='https://www.matara.pro/nedarimplus/online/?mosad=7001560' />

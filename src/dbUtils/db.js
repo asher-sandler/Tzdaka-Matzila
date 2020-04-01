@@ -53,7 +53,7 @@ export async function getLangData(lang, onDataLoad){
 	const data = await response.json();
 	//console.log(data);
 	//console.log(data["en"]);
-	console.log(data["en"]["strings"].findIndex(string => string.name === "ASHEM ELOKEINU"));	
+	//console.log(data["en"]["strings"].findIndex(string => string.name === "ASHEM ELOKEINU"));	
 	
 	onDataLoad(data);
 	return data;
