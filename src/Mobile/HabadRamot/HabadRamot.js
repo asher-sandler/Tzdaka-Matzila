@@ -12,15 +12,15 @@ class HabadRamot extends Component {
     render() {
  
        const settings = {
-            infiniteLoop: false,
+            infiniteLoop: true,
             showStatus: false,
             showThumbs: false,
 			showIndicators: false,
 			showArrows: true,
-            autoPlay : false,
+            autoPlay : true,
             stopOnHover: true,
             transitionTime : 720,
-            interval: 7000,
+            interval: 9000,
  
         };	
 

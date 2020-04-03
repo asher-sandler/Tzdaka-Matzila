@@ -190,5 +190,6 @@
 }
 
 .mdl-progress-green > .progressbar {
-    background-color: rgb(0,153,0) !important;
+    /* background-color: rgb(0,153,0) !important; */
+	background-color: rgb(255,145,0) !important;
 }
