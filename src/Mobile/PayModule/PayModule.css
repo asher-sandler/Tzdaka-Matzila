@@ -25,6 +25,36 @@
 	font-size: 1.5rem;
 }
 
+
+.down-arrow-panel-mobile-hide{
+	text-align: center;
+    height: 90px;
+	display:none;
+}
+
+.down-arrow-panel-mobile-show{
+	text-align: center;
+    height: 90px;
+	display:block;
+}
+
+.down-arrow-mobile{
+	animation: arrowMobile 3s linear infinite;
+}
+
+
+@keyframes arrowMobile
+{
+     0%, 100% {
+    width: 90px;
+  }
+  50% {
+    width: 100px;
+  } 
+}
+
+
+
 .asterisk{
 	color: red;
 	margin-right: 5px;
@@ -43,6 +73,10 @@
 	color: black;
 }
 
+.pay-module-mobile-rtl h3{
+	text-align: center;
+}
+
 
 .pay-module-mobile-rtl  .i-visa{
 	color: white;
@@ -55,6 +89,17 @@
 
 }
 
+.flag{
+	display:inline;
+
+	
+}
+
+.pay-module-mobile-rtl .image-flag{
+	width:30px;
+	height:30px;
+}
+
 .span-trom-mobile{
 	
 
@@ -63,7 +108,27 @@
   transform: translate(0%, 50%);
 }
 
+.pay-module-mobile-rtl .block-mobile {
+    position: relative;
+    padding: 20px 15px 20px 20px;
+    border: 1px solid #747474;
+    border-top: 1px solid #487922;
+    background: #ededed;
+    margin: 20px;
+	font-size:24px;
+	font-family: 'Assistant', sans-serif;
+}
 
+.hidden-mobile{
+	
+	display:none;
+	
+}
+
+.shown-mobile{
+	
+	display:block;
+}
 
 .trom-mobile {
 
@@ -72,25 +137,32 @@
     line-height: 60px;
     border: 0 none;
     font-size: 26px;
-    padding-left: 60px; 
-    padding-right: 60px; 
+    /* padding-left: 60px;  */
+    /* padding-right: 60px;  */
     -webkit-appearance: none;
     font-weight: 700;
     background: none;
     cursor: pointer;
     box-sizing: content-box;
+	width: 100%;
 
-    border: 3px solid #000000;
+    border: 1px solid #000000;
+	
 	border-radius: 15px;
 	text-align: center;
 	font-size: 40px;
 	color: white;	
+	
+	padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
 
 
 	
 	/* width: 212px; */
 	height: 134px;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 
 	/* color: black; */
 	/* z-index: 2; */

@@ -56,6 +56,17 @@
 	text-align: center;
 }
 
+.hidden-desktop{
+	
+	display:none;
+	
+}
+
+.shown-desktop{
+	
+	display:block;
+}
+
 .pay-module-desktop-rtl .input-control{
 	font-family: 'Assistant', sans-serif;
 	font-size:26px;
@@ -135,6 +146,41 @@ select#valute option[value="ILS"]   { background-image:url(/img/beit-habad/isrfl
     font-weight: bold;
 	transform: translate(0%, 400%);
 	text-decoration: none
+}
+
+
+.down-arrow-panel-desktop-hide
+{
+	text-align: center;
+	height: 130px;
+	display:none;
+
+	
+}
+
+.down-arrow-panel-desktop-show
+{
+	text-align: center;
+	height: 130px;
+	display:block;
+
+	
+}
+
+.down-arrow{
+	animation: arrow 3s linear infinite;
+}
+
+
+
+@keyframes arrow
+{
+     0%, 100% {
+    width: 90px;
+  }
+  50% {
+    width: 100px;
+  } 
 }
 
 
