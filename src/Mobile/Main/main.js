@@ -10,6 +10,7 @@ import LargeCarousel from '../Carousel/LargeCarousel';
 import Donators from '../PanelDonators/Donators.js';
 import Footer from '../Footer/Footer';
 import HabadRamot from '../HabadRamot/HabadRamot.js';
+import BannerRamot from '../BannerRamot/BannerRamot.js';
 
 
 import {getYouTube} from '../../Utils/Utils.js';
@@ -35,7 +36,11 @@ render(){
 					procent		  = {this.props.procent}
 					timeTillDate  = {this.props.dateUntil}					
 				/>
+				<LargeCarousel slidesCount={this.props.slidesCount} dir={this.props.dir}/>
+				{/*
 				<HabadRamot />
+				*/}
+				<BannerRamot />
 				
 				<CountDown timeTillDate={this.props.dateUntil}  dir={this.props.dir}/>
 				<PayModule dir={this.props.dir} />
@@ -48,7 +53,7 @@ render(){
 				<YouTube dir={this.props.dir} youtube={ytube}/>
 				
 				
-				<LargeCarousel slidesCount={this.props.slidesCount} dir={this.props.dir}/>
+
 				
 				
 				

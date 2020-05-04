@@ -117,7 +117,61 @@
     margin: 20px;
 	font-size:24px;
 	font-family: 'Assistant', sans-serif;
+	border-radius: 20px;
 }
+
+.pay-module-mobile-rtl label{
+	/* display:none; */
+}
+
+.pay-module-mobile-rtl .gap{
+	height:15px;
+	width: 15px;
+}
+
+.pay-module-mobile-rtl .inputAmount-mobile{
+	width:160px;
+	height:75px;
+	border: 0px; 
+    /* border-radius: 0.75rem 0.75rem 0.75.rem 0.75rem; */
+	border-top-right-radius: 0.75rem;
+	border-bottom-right-radius:  0.75rem;
+    font-size: 60px;
+	display:inline-block;
+}
+
+.select-valute{
+	width:20px;
+	height:75px;
+	display:inline-block;
+	transform: translate(0px, 2.5px); 
+}
+.valute{
+	width:20px;
+	height:40px;
+	border-bottom-left-radius:  0.75rem;	
+	background-color: #ffffff; 
+	transform: translate(0px, 75px);
+    /* text-align: center;	 */
+	/* vertical-align: middle; */
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#selectCurrency{
+	
+	width:20px;
+	height:35px;
+
+    font-size: 60px;
+	border: 0px;
+	border-top-left-radius: 0.75rem;
+	/* border-bottom-left-radius:  0.75rem;	 */
+	/* display:inline-block; */
+	/* transform: translate(0px, 2.5px) */
+}
+
 
 .hidden-mobile{
 	

@@ -51,7 +51,7 @@ class PBar extends Component{
 					  
 				</Cell>
 				</Grid>
-				<img src="/img/beit-habad/shutaf.png" className="image" alt="Shutafim beAhava" />
+				<img src="/img/beit-habad/shutaf-1.png" className="image" alt="Shutafim beAhava" />
             </div>
         )
     }

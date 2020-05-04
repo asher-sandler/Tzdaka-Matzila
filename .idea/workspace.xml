@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36ab1bbd-e758-44bc-aaa7-e94c68a956ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/charity.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeskTop/PayModule/PayModule.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeskTop/PayModule/PayModule.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeskTop/Indicator/Indicator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeskTop/Indicator/Indicator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeskTop/Main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeskTop/Main/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DeskTop/PayModule/PayModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeskTop/PayModule/PayModule.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mobile/PayModule/PayModule.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile/PayModule/PayModule.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile/HabadRamot/HabadRamot.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile/HabadRamot/HabadRamot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mobile/Main/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile/Main/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mobile/PayModule/PayModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mobile/PayModule/PayModule.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,6 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586093325587</updated>
       <workItem from="1586093327836" duration="6497000" />
+      <workItem from="1586523659763" duration="41000" />
     </task>
     <servers />
   </component>
@@ -64,7 +62,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

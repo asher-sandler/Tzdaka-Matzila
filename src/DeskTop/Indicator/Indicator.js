@@ -29,7 +29,7 @@ class MyIndic extends Component{
 		}
 		else
 		{
-		console.log(this.state.procent );		
+		//console.log(this.state.procent );		
 		let procStyle = new Array(101)
 		 procStyle[0]   = {transform: "translate(148% , 125%)"};
 		 procStyle[1]   = {transform: "translate(166% , 125%)"};

@@ -79,7 +79,7 @@ class CountDown extends React.Component {
                             <SVGCircle radius={daysRadius} />
 						*/}	
                             {days}
-                            <span>days</span>
+                            <span>ימים</span>
                         </div>
                     )}
                     {(
@@ -88,7 +88,7 @@ class CountDown extends React.Component {
                             <SVGCircle radius={hoursRadius} />
 						*/}	
                             {hours}
-                            <span>hours</span>
+                            <span>שעה</span>
                         </div>
                     )}
                     {(
@@ -97,7 +97,7 @@ class CountDown extends React.Component {
                             <SVGCircle radius={minutesRadius} />
 						*/}	
                             {minutes}
-                            <span>minutes</span>
+                            <span>דקות</span>
                         </div>
                     )}
                     {(
@@ -106,7 +106,7 @@ class CountDown extends React.Component {
                             <SVGCircle radius={secondsRadius} />
 						*/}	
                             {seconds}
-                            <span>seconds</span>
+                            <span>שניות</span>
                         </div>
                     )}
                 </div>

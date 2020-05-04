@@ -14,7 +14,7 @@ class Footer extends React.Component {
                 <tbody>
                 <tr>
                     <td className="titles">
-                        <img className="footer-logo" src="/img/beit-habad/habad-ramot.png" alt="Beit Habad Ramot" />
+                        <img className="footer-logo" src="/img/beit-habad/habad-ramot-1.png" alt="Beit Habad Ramot" />
                     </td>
 					{/*
                     <td  className="center-column titles">

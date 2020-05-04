@@ -14,14 +14,17 @@ class Bar extends Component {
 				*/
 				ret = (
 				
-				<ProgressBar  className="mdl-progress-green" style={{margin: 'auto', width: '75%', height: "20px"}} progress={prgs} />
+				<ProgressBar  className="mdl-progress-green" style={{margin: 'auto', width: '90%', height: "20px"}} progress={prgs} />
 				)
 			}
 			else
 			{
 				ret = (
 		  
+		  <ProgressBar  className="mdl-progress-green" style={{margin: 'auto', width: '90%', height: "20px"}} progress={prgs}  /> 
+			  /*
 		  <ProgressBar  className="mdl-progress-green" style={{margin: 'auto', width: '75%', height: "20px"}} progress={prgs}  /> 
+			  */
 				)
 			}
 			
@@ -33,7 +36,7 @@ class Bar extends Component {
 		  <Grid>
 			<Cell col={12}>
 				{/* indeterminate buffer={this.props.progress}*/}
-			  <div style={{display: 'flex'}}>
+			  <div >
 			  <div className="summ">
 			  {this.props.skill} 
 			  </div>

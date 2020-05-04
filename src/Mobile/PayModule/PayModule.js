@@ -19,6 +19,7 @@ class PayModule extends Component {
             amount: 10,
             flag: ["/img/beit-habad/isrflag.png",
                 "/img/beit-habad/usflaf.png "],
+			currArray: ["₪","$"],	
             currentFlag: 0,
             formValidated: false
         }
@@ -173,29 +174,23 @@ class PayModule extends Component {
                                         <div className="form-group row">
 
                                             <div className="col-sm-6">
-                                                <div>
+											{/*
+												<div>
                                                     <label htmlFor="inputAmount">סכום<span className="asterisk">*</span></label>
                                                 </div>
-                                                <input id="inputAmount" type="number" defaultValue={this.state.amount}
+											*/}	
+												
+												{/*defaultValue={this.state.amount}*/}
+                                                <input id="inputAmount" type="number" 
                                                        name="amount"
                                                        min="1" max="999999" maxLength="6" placeholder="סכום"
-                                                       className="input-control" reqfield="1"
+                                                       className="input-control inputAmount-mobile" reqfield="1"
                                                 />
-                                                <div className="valid-feedback">
-                                                    Ok!
-                                                </div>
-                                                <div className="invalid-feedback">
-                                                    סכום!
-                                                </div>
-                                            </div>
-
-                                            <div className="col-sm-6">
-                                                <div>
-                                                    <label htmlFor="selectCurrency">מטבע</label>
-                                                </div>
+												<div className="select-valute">
+												<div className="valute">{this.state.currArray[this.state.currentFlag]}</div>
                                                 <select id="selectCurrency" name="currency" className="select-control"
-                                                        id="valute" onChange={this.changeCurrency}>
-                                                    <option value="ILS">
+                                                        onChange={this.changeCurrency}>
+                                                    <option value="ILS" selected>
 
                                                         שקל חדש
                                                         ₪
@@ -208,76 +203,124 @@ class PayModule extends Component {
 
                                                     </option>
                                                 </select>
+												
+												</div>
+
+                                                <div className="valid-feedback">
+                                                    Ok!
+                                                </div>
+                                                <div className="invalid-feedback">
+                                                    סכום!
+                                                </div>
+                                            </div>
+											
+											
+
+											{/*
+											<div className="gap"></div>
+                                                <div>
+                                                    <label htmlFor="selectCurrency">מטבע</label>
+                                                </div>
+											*/}	
+												{/*
                                                 <div className="flag">
                                                     <img src={this.state.flag[this.state.currentFlag]} alt="Currency"
                                                          className="image-flag"/>
                                                 </div>
-                                            </div>
+												*/}
+
 
                                         </div>
                                         <div className="hidden-mobile" id="hidden-box">
 
                                             <div className="form-group row">
                                                 <div className="col-sm-6">
-                                                    <label htmlFor="inputFirstname">שם משפחה<span
+												{/*
+												<label htmlFor="inputFirstname">שם משפחה<span
                                                         className="asterisk">*</span></label>
+												*/}		
+														
                                                     <input type="text" className="form-control" id="inputFirstname"
                                                            placeholder="שם משפחה" name="firstname" reqfield="1"/>
                                                 </div>
+												<div className="gap"></div>
                                                 <div className="col-sm-6">
+												{/*
                                                     <label htmlFor="inputLastname">שם פרטי<span
                                                         className="asterisk">*</span></label>
+												*/}		
                                                     <input type="text" className="form-control" id="inputLastname"
                                                            placeholder="שם פרטי" name="lastname" reqfield="1"/>
                                                 </div>
                                             </div>
                                             <div className="form-group row">
-                                                <div className="col-sm-6">
-                                                    <label htmlFor="inputAddressLine1">כתובת<span
-                                                        className="asterisk">*</span></label>
-                                                    <input type="text" className="form-control" id="inputAddressLine1"
-                                                           placeholder="כתובת" reqfield="1" name="address"/>
-                                                </div>
-                                                <div className="col-sm-6">
+												<div className="col-sm-6">
+												{/*	
                                                     <label htmlFor="inputIDNumber">תעודת זהות<span
                                                         className="asterisk">*</span></label>
+												*/}		
                                                     <input type="number" className="form-control" id="inputIDNumber"
                                                            placeholder="תעודת זהות" name="idnumber" min="0"
                                                            max="999999999"
                                                            maxLength="9" reqfield="1"/>
                                                 </div>
-                                            </div>
-                                            <div className="form-group row">
-                                                <div className="col-sm-6">
+												<div className="gap"></div>
+												<div className="col-sm-6">
+												{/*
                                                     <label htmlFor="inputCity">עיר<span
                                                         className="asterisk">*</span></label>
+												*/}		
                                                     <input type="text" className="form-control" id="inputCity"
                                                            placeholder="עיר" name="city" reqfield="1"/>
                                                 </div>
-
+		
+												
+                                               
+                                                
+                                            </div>
+                                            <div className="form-group row">
+											
+												<div className="col-sm-6">
+												{/*
+                                                    <label htmlFor="inputAddressLine1">כתובת<span
+                                                        className="asterisk">*</span></label>
+												*/}		
+                                                    <input type="text" className="form-control" id="inputAddressLine1"
+                                                           placeholder="כתובת" reqfield="1" name="address"/>
+                                                </div>
+										
+												<div className="gap"></div>
                                                 <div className="col-sm-6">
+												{/*
                                                     <label htmlFor="inputEmail">מייל<span
                                                         className="asterisk">*</span></label>
+												*/}		
                                                     <input type="email" className="form-control" id="inputEmail"
                                                            placeholder="מייל" name="email" reqfield="1"/>
                                                 </div>
                                             </div>
                                             <div className="form-group row">
                                                 <div className="col-sm-6">
+												{/*
                                                     <label htmlFor="inputContactNumber">טלפון<span
                                                         className="asterisk">*</span></label>
+												*/}		
                                                     <input type="number" className="form-control"
                                                            id="inputContactNumber"
                                                            placeholder="טלפון" reqfield="1" name="phone"/>
                                                 </div>
+												<div className="gap"></div>
                                                 <div className="col-sm-6">
+												{/*
                                                     <label htmlFor="inputComment">הערות</label>
+												*/}	
                                                     <textarea type="text" className="form-control" id="inputComment"
                                                               placeholder="הערות" rows="3" name="comment"/>
                                                 </div>
                                             </div>
                                             <div className="form-group row">
                                                 <div className="col-sm-6">
+												
                                                     <label>תשלומים</label>
                                                     <div className="radio-control">
                                                         <div className="input-group-prepend">
@@ -298,7 +341,8 @@ class PayModule extends Component {
                                                                        className="radio-control"/>
                                                                 <div className="rc-label">
                                                                     <label>
-                                                                        הוראת קבע אשראי
+                                                                        הוראת   &nbsp;קבע &nbsp;&nbsp;  אשראי
+																		
 
                                                                     </label>
                                                                 </div>
