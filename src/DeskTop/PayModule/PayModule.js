@@ -1,15 +1,7 @@
 import React, {Component} from 'react';
-
 import './PayModule.css';
-//import 'bootstrap/dist/css/bootstrap.min.css'
-//import visa from './visa.png';
-
-//import visa from './cc.png';
-
-
+import '../../SharedComponent/dropmenu/dropmenu.css';
 import {mClass} from '../../Utils/Utils.js';
-//import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-//import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 
 
 class PayModule extends Component {
@@ -20,15 +12,60 @@ class PayModule extends Component {
             amount: 10,
             flag: ["/img/beit-habad/isrflag.png",
                 "/img/beit-habad/usflaf.png "],
-			currArray: ["₪","$"],	
+            clickState: 1,
+            selectClass : ['menu-visible','menu-hidden'],
+            triangleClass : ['t-down','t-up'] ,   
+            currArray: ["₪","$"],
+            defValue: ["ILS", "USD"],	
+            menu : [
+				{descr: "שקל חדש", symb : "₪"},
+				{descr: "דולר אמריקאי", symb : "$"}
+			],
+			curCurrency : 0,
+            
             currentFlag: 0,
             formValidated: false
         }
 
 
+
     }
 
+    itemIsHighlighted = (idx) => {
+		let ret = "select2-results__option";
+		if (idx === this.state.curCurrency){
+			ret += "  select2-results__option--highlighted";
+		}
+		return ret;
+	}
+	
+	selectClick = (event, data) => {
+		
+        this.setState({curCurrency:data,  clickState: 1})
+        
+    }
+    
+    selectOpt = (e) => {
 
+        
+		
+		let st =  0; 
+		
+		if (this.state.clickState === 0) 
+		{   st = 1;
+		}
+		else
+		{
+			st = 0;
+		}		
+		
+	
+		this.setState({clickState : st});
+		
+		
+
+    }
+    
     componentDidMount() {
         this.validate();
     }
@@ -44,7 +81,8 @@ class PayModule extends Component {
             let elements = event.target.elements;
 
             let amount = elements["amount"].value;
-            let currency = elements["currency"].value;
+        
+            let currency = this.state.defValue[this.state.curCurrency]
             let payment = elements["payment"].value;
 
             let firstname = elements["firstname"].value;
@@ -58,10 +96,6 @@ class PayModule extends Component {
             let email = elements["email"].value;
             let phone = elements["phone"].value;
             let comment = elements["comment"].value;
-
-            //console.log(elements);
-            //console.log(currency);
-            //console.log(payment);
 
             let urlMatare = "https://www.matara.pro/nedarimplus/online/?mosad=7001560&TakanonChecked=1"
 
@@ -93,16 +127,6 @@ class PayModule extends Component {
         }
     }
 
-    changeCurrency = (event) => {
-        let currncy = event.target.value;
-        //console.log(currncy);
-        let flagidx = 0
-        if (currncy === "USD") {
-            flagidx = 1;
-
-        }
-        this.setState({currentFlag: flagidx});
-    }
     // ************************************************************
     validate = () => {
 
@@ -121,7 +145,7 @@ class PayModule extends Component {
                         let stl = control[0].style;
 
                         let val = control[0].value;
-                        //console.log(val);
+                    
 
 
                         if (val) {
@@ -157,7 +181,7 @@ class PayModule extends Component {
             this.setState({formValidated: false})
         }
 
-        //console.log(event);
+    
     }
 
 
@@ -177,59 +201,49 @@ class PayModule extends Component {
 
                                         <div className="form-group row">
 
-                                            <div className="col-sm-6">
-											{/*
-                                                <div>
-                                                    <label htmlFor="inputAmount">סכום<span className="asterisk">*</span></label>
-                                                </div>
-											*/}	
+                                            <div className="col-sm-12">
+											
                                                 <input id="inputAmount" type="number" 
                                                        name="amount"
                                                        min="1" max="999999" maxLength="6" placeholder="סכום"
                                                        className="input-control inputAmount-desktop" reqfield="1"
                                                 />
-											<div className="select-valute">
-											<div className="valute">{this.state.currArray[this.state.currentFlag]}</div>
-                                                <select id="selectCurrency" name="currency" className="select-control"
-                                                        onChange={this.changeCurrency}>
-                                                    <option value="ILS">
-
-                                                        שקל חדש
-                                                        ₪
-
-                                                    </option>
-                                                    <option value="USD">
-
-                                                        דולר אמריקאי
-                                                        $
-
-                                                    </option>
-                                                </select>
-											</div>													
-												{/*
-                                                <div className="valid-feedback">
-                                                    Ok!
-                                                </div>
-                                                <div className="invalid-feedback">
-                                                    סכום!
-                                                </div>
-												*/}
+									        <div className="select-valute" onClick={this.selectOpt}>
+												    <div className="valute">{this.state.currArray[this.state.curCurrency]}</div>
+                                                    <div className="arrow-wrap">
+                                                        <div className={this.state.triangleClass[this.state.clickState]}>
+                                                        </div>
+                                            </div>
+                                            </div>
+                                            <div id="selectCurrency" className={this.state.selectClass[this.state.clickState]}>
+                                                    <span className="select2-container select2-container--default select2-container--open" >
+                                                            <span className="select2-dropdown select2-dropdown--below "  >
+                                                                <span className="select2-results">
+                                                                    <ul className="select2-results__options">
+                                                                    {
+                                                                        Object.entries(this.state.menu).map((el, idx) => (
+                                                                            <li className={this.itemIsHighlighted(idx)}   aria-selected="true" onClick={((e) => this.selectClick(e, idx))} key={idx} data={idx}>
+                                                                                <div className="select2-option">
+                                                                                    <span>{el[1].descr}</span>&nbsp;
+                                                                                    <span className="currency-symbol">{el[1].symb}</span>
+                                                                                </div>
+                                                                            </li>
+                                                                        ))
+                                                                    }
+                                                            
+                                                                    </ul>
+                                                                </span>
+                                                            </span>
+			                                        </span>
+                                                    </div>												
+												
                                             </div>
 											<div className="gap"></div>
 
                                             <div className="col-sm-6">
-											{/*
-                                                <div>
-                                                    <label htmlFor="selectCurrency">מטבע</label>
-                                                </div>
-											*/}	
+											
 
-												{/*
-                                                <div className="flag">
-                                                    <img src={this.state.flag[this.state.currentFlag]} alt="Currency"
-                                                         className="image-flag"/>
-                                                </div>
-												*/}
+												
                                             </div>
 
                                         </div>
@@ -237,18 +251,12 @@ class PayModule extends Component {
 
                                             <div className="form-group row">
                                                 <div className="col-sm-6">
-												{/*
-                                                    <label htmlFor="inputFirstname">שם משפחה<span
-                                                        className="asterisk">*</span></label>
-												*/}		
+													
                                                     <input type="text" className="form-control" id="inputFirstname"
                                                            placeholder="שם משפחה" name="firstname" reqfield="1"/>
                                                 </div>
                                                 <div className="col-sm-6">
-												{/*
-                                                    <label htmlFor="inputLastname">שם פרטי<span
-                                                        className="asterisk">*</span></label>
-												*/}		
+													
                                                     <input type="text" className="form-control" id="inputLastname"
                                                            placeholder="שם פרטי" name="lastname" reqfield="1"/>
                                                 </div>
@@ -256,10 +264,7 @@ class PayModule extends Component {
                                             <div className="form-group row">
 											
                                                 <div className="col-sm-6">
-												{/*
-                                                    <label htmlFor="inputIDNumber">תעודת זהות<span
-                                                        className="asterisk">*</span></label>
-												*/}		
+												
                                                     <input type="number" className="form-control" id="inputIDNumber"
                                                            placeholder="תעודת זהות" name="idnumber" min="0"
                                                            max="999999999"
@@ -268,10 +273,7 @@ class PayModule extends Component {
 
 												
                                                 <div className="col-sm-6">
-												{/*
-                                                    <label htmlFor="inputCity">עיר<span
-                                                        className="asterisk">*</span></label>
-												*/}		
+													
                                                     <input type="text" className="form-control" id="inputCity"
                                                            placeholder="עיר" name="city" reqfield="1"/>
                                                 </div>
@@ -282,46 +284,33 @@ class PayModule extends Component {
                                             <div className="form-group row">
 											
                                                 <div className="col-sm-6">
-												{/*
-                                                    <label htmlFor="inputAddressLine1">כתובת<span
-                                                        className="asterisk">*</span></label>
-												*/}		
+												
                                                     <input type="text" className="form-control" id="inputAddressLine1"
                                                            placeholder="כתובת" reqfield="1" name="address"/>
                                                 </div>
 											
                                                 <div className="col-sm-6">
-												{/*
-                                                    <label htmlFor="inputEmail">מייל<span
-                                                        className="asterisk">*</span></label>
-												*/}		
+													
                                                     <input type="email" className="form-control" id="inputEmail"
                                                            placeholder="מייל" name="email" reqfield="1"/>
                                                 </div>
                                             </div>
                                             <div className="form-group row">
                                                 <div className="col-sm-6">
-												{/*
-                                                    <label htmlFor="inputContactNumber">טלפון<span
-                                                        className="asterisk">*</span></label>
-												*/}		
+													
                                                     <input type="number" className="form-control"
                                                            id="inputContactNumber"
                                                            placeholder="טלפון" reqfield="1" name="phone"/>
                                                 </div>
                                                 <div className="col-sm-6">
-												{/*
-                                                    <label htmlFor="inputComment">הערות</label>
-												*/}	
+												
                                                     <textarea type="text" className="form-control" id="inputComment"
                                                               placeholder="הערות" rows="3" name="comment"/>
                                                 </div>
                                             </div>
                                             <div className="form-group row">
                                                 <div className="col-sm-6">
-												{/*
-                                                    <label>תשלומים</label>
-												*/}	
+												
                                                     <div className="radio-control">
                                                         <div className="input-group-prepend">
                                                             <div className="input-group-text">
@@ -361,43 +350,10 @@ class PayModule extends Component {
                             </div>
                         </div>
                     </div>
-                    {/*
-				className="form-control hidden select2-hidden-accessible"  
-				 aria-hidden="true"
-				
-				<a href="https://www.matara.pro/nedarimplus/online/?mosad=7001560" alt="Pay" target="_blank" rel="noopener noreferrer">
-				
-					<div className="title">לתרום באופן מקוון</div>
-					
-					<i className="fa fa-cc-visa i-visa" aria-hidden="true"></i>
-					
-					<div>
-				
-					<div>
-                    <img src={visa} className="pay-image" alt="visa" />
-					</div>
-                </a>
-				*/}
+                  
                     <input type="submit" value="תרום עכשיו" className="trom">
                     </input>
-                    {/*
-				<a href="https://www.matara.pro/nedarimplus/online/?mosad=7001560" alt="Pay" target="_blank" rel="noopener noreferrer" style={{	textDecoration: "none"}}>
-					
-				<div className="dai-tzdaka">
-					תרום עכשיו
-					 </div>
-					
-					<div className="trom" >
-					
-					<span className="span-trom">
-					
-					תרום עכשיו
-					<i className="fa fa-money i-visa" aria-hidden="true"></i>
-					</span>
-					</div>
-				
-				</a>
-				*/}
+  
                 </form>
             </div>
         )

@@ -11,35 +11,6 @@
     padding: 30px;
 }
 
-.pay-module-desktop-rtl .pay-image{
-	
-	padding-right: 38%;
-}
-
-.pay-module-desktop-rtl .title {
-    height: auto;
-    font-size: 28px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.21;
-    letter-spacing: normal;
-    padding-bottom: 5px;
-	text-align: center;
-	color: black;
-}
-
-
-.pay-module-desktop-rtl  .i-visa{
-	color: white;
-	margin-right:10px;
-	
-
-    font-size: 2rem;
-
-
-
-}
 
 .pay-module-desktop-rtl .gap{
 	height:15px;
@@ -47,36 +18,65 @@
 }
 
 .pay-module-desktop-rtl .inputAmount-desktop{
-	max-width:80%;
+	width:85%;
+	font-family:Assistant;
 	height:75px;
 	border: 0px !important; 
-    /* border-radius: 0.75rem 0.75rem 0.75.rem 0.75rem; */
-	border-top-right-radius: 0.75rem !important; 
-	border-bottom-right-radius:  0.75rem !important; 
-    font-size: 60px !important; 
-	display:inline-block !important; 
+
+    font-size: 40px;
+	text-align:center;
+	display:inline-block;
 }
 
+.pay-module-desktop-rtl .t-down{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #007bff transparent transparent transparent;
+    display:inline-block;
+}
+.pay-module-desktop-rtl .t-up{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #5bf451 transparent transparent transparent;
+    display:inline-block;
+}	
+
+
 .pay-module-desktop-rtl .select-valute{
-	width:20px;
+	width:13%; 
 	height:75px;
 	display:inline-block;
-	/* transform: translate(0px, -2px);  */
+    transform: translate(0px, 16.3px);
 }
 
 .pay-module-desktop-rtl .valute{
-	width:20px;
-	height:40px;
-	border-bottom-left-radius:  0.75rem;	
+	width:100%;
+	height:70%;
+	
+	font-size: 40px;
+	font-weight: 700;
+    line-height: 60px;
+	
 	background-color: #ffffff; 
-	transform: translate(0px, 75px);
-    /* text-align: center;	 */
-	/* vertical-align: middle; */
-	display: flex;
+	transform: translate(0px, 0px);
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.arrow-wrap{
+    
+    width:100%;
+    height:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; 
+}
 .pay-module-desktop-rtl .block {
     position: relative;
     padding: 20px 15px 20px 20px;
@@ -88,6 +88,17 @@
 	font-family: 'Assistant', sans-serif;
 	border-radius: 20px;
 }
+
+
+.menu-hidden{
+    display: none;
+}
+
+.menu-visible{
+    display: inline-block;  
+
+}
+
 
 .pay-module-desktop-rtl h3{
 	text-align: center;
@@ -103,10 +114,6 @@
 	
 	display:block;
 }
-
-/* .pay-module-desktop-rtl label{ */
-	/* display:none; */
-/* } */
 
 .pay-module-desktop-rtl .input-control{
 	font-family: 'Assistant', sans-serif;
@@ -149,6 +156,17 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.pay-module-desktop-rtl .inputAmount-desktop{
+	width:85%;
+	font-family:Assistant;
+	height:75px;
+	border: 0px; 
+    font-size: 40px;
+	text-align:center;
+	display:inline-block;
+}
+
+
 
 .pay-module-desktop-rtl .select-control{
 	font-family: 'Assistant', sans-serif;	
@@ -160,33 +178,6 @@ input[type=number] {
 	margin-bottom:20px;
 	font-family: 'Assistant', sans-serif;	
 	font-size:26px;
-}
-
-.pay-module-desktop-rtl  .flag{
-	display:inline;
-
-	
-}
-
-select#valute option[value="ILS"]   { background-image:url(/img/beit-habad/isrflag.png);   }
-
-.pay-module-desktop-rtl  .image-flag{
-	width:50px;
-	height:50px;
-}
-
-
-
-.dai-tzdaka
-{
-	color:black;
-	text-align: center;
-	font-size: 30px;
-	color: red;
-	
-    font-weight: bold;
-	transform: translate(0%, 400%);
-	text-decoration: none
 }
 
 
@@ -247,145 +238,19 @@ select#valute option[value="ILS"]   { background-image:url(/img/beit-habad/isrfl
 	text-align: center;
 	font-size: 26px;
 	color: white;	
-	
-	
 	width: 212px;
 	height: 134px;
 	margin: 0 auto;
-
-	/* color: black; */
-	/* z-index: 2; */
-	
-	
- 	/* background: url(/img/beit-habad/visa.png); */
-	/* background-repeat: no-repeat; */
-	
-	
-
-	/* background: #2193b0;  */ 
-
-	/* background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);   */
-
-	/* background: linear-gradient(to bottom, #6dd5ed, #2193b0);  */
-
-	
-/* background: #23074d;   */
-/* background: -webkit-linear-gradient(to right, #cc5333, #23074d);   */
-/* background: linear-gradient(to right, #cc5333, #23074d);  */
-
-	
 	background-color: #f47721;
-	/* opacity: 0.5; */
-	/* transition: opacity .75s ease-in-out,   transform 0.75s, box-shadow 0.75s,color 0.75s, font-size 0.75s; */
 	transition:  font-size 0.75s;
-}
-
-.pay-module-desktop-rtl .span-trom{
-	
-
-  display: inline-block;
-  vertical-align: middle;
-  transform: translate(0%, 50%);
 }
 
 
 .pay-module-desktop-rtl .trom:hover { 
-	/* opacity: 1; */
-	/* text-align: center; */
 	font-size: 32px;
 	transition:  font-size 0.75s;
-	/* color: white;	 */
-	/* transition: opacity .75s ease-in-out,   transform 0.75s, box-shadow 0.75s, color 0.75s, font-size 0.75s; */
  } 
 
 
 
 
-
-.pay-module-desktop-rtl .date {
-    width: 205px;
-    height: 24px;
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #6d7278;
-}
-
-
-.pay-module-desktop-rtl .info-title {
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    color: #b2b2b2;
-    padding-bottom: 4px;
-}
-
-
-.pay-module-desktop-rtl .info-text {
-    font-size: 18px;
-    line-height: 1.14;
-    color: #0b7ffd;
-    padding-bottom: 20px;
-}
-
-.pay-module-desktop-rtl .info-regular {
-    font-size: 18px;
-    line-height: 1.14;
-    
-    padding-bottom: 20px;
-	    margin-left: -3px;
-}
-
-.pay-module-desktop-rtl .info-text > a{
-    font-size: 18px;
-    line-height: 1.14;
-    color: #0b7ffd;
-    padding-bottom: 20px;
-}
-
-
-.pay-module-desktop-rtl .working-hours {
-    font-size: 18px;
-    line-height: 1.78;
-    color: #333d48;
-    margin-left: -3px;
-}
-
-.pay-module-desktop-rtl .description {
-    font-size: 18px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    color: #2c2c2c;
-    white-space: pre-line;
-}
-
-.pay-module-desktop-rtl .hashtag {
-    width: 147px;
-    height: 26px;
-    object-fit: contain;
-    border-radius: 6px;
-    background-color: #0b7ffd;
-    font-size: 16px;
-    color: #ffffff;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-right: 10px;
-}
-
-
-.pay-module-desktop-rtl .location-link a {
-    color: blue;
-  }
-
-  .pay-module-desktop-rtl .business-closed{
-      color: red;
-  }
- 
